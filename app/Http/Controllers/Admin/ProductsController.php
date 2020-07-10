@@ -251,7 +251,7 @@ class ProductsController extends Controller
         $pictures=new ModelPicture();
         $collections=new ModelCollections();
 
-        dd($pictures->getAllPictureByProductId(26));
+        //dd($pictures->getAllPictureByProductId(26));
 
         $data['idp']=$id;
         //dd($products->getAllProductPricesById($id));

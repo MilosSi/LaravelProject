@@ -61,7 +61,7 @@
                                 <li><a href="/ourteam">Our team</a></li>
                                 <li><a href="/contactus">Contact us</a></li>
                                 <li><a href="/author">Author</a></li>
-                                <li><a href="/contactus">Documentation</a></li>
+                                <li><a href="/LaravelDokumentacija.pdf">Documentation</a></li>
                             </ul>
                         </nav>
                     </div>

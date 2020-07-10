@@ -27,7 +27,7 @@
                     <h2>Miloš Simić</h2>
                     <span>Web Developer</span>
 
-                    <p>This site is done as a project for the subject of Web Programing PHP 2. Hope you liked it!</p>
+                    <p>This site is done as a project for the subject of Web Programing PHP 2. Hope you liked it! For more information about me click on my linkedin profile</p>
                     <div class="team-details-social">
                         <a href="https://www.linkedin.com/in/milossimic1603/"><i class="fa fa-linkedin"></i></a>
                     </div>
