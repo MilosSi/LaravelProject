@@ -1,0 +1,46 @@
+/*-------- 12. Testimonial style ---------*/
+
+.single-testimonial {
+    .client-img {
+        img {
+            width: 65px;
+            display: inline-block;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.56;
+        margin: 19px 0 51px;
+        font-family: $playfairdisplay;
+        color: #262626;
+    }
+    .client-info {
+        position: relative;
+        &:before {
+            position: absolute;
+            left: 0;
+            top: -28px;
+            right: 0;
+            margin: 0 auto;
+            width: 35px;
+            height: 2px;
+            background-color: #828282;
+            content: "";
+        }
+        h5 {
+            color: #262626;
+            line-height: 1;
+            margin: 0 0 2px;
+        }
+        span {
+            color: #262626;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+}
+
+
+
+
+

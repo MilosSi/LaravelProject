@@ -1,0 +1,404 @@
+/*-------- 25. About us style ---------*/
+
+.about-us-img , .skill-img {
+    img {
+        width: 100%;
+    }
+}
+
+.about-us-content {
+    margin: 0 0 0 100px;
+    @media #{$lg-layout} {
+        margin: 0 0 0 50px;
+    }
+    @media #{$md-layout} {
+        margin: 0 0 0 0px;
+    }
+    @media #{$xs-layout} {
+        margin: 0 0 0 0px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 40px;
+        @media #{$md-layout} {
+            font-size: 22px;
+            margin: 0 0 15px;
+        }
+        @media #{$xs-layout} {
+            font-size: 19px;
+            margin: 20px 0 10px;
+        }
+    }
+    p {
+        color: #989898;
+        font-size: 12px;
+        margin: 0 0 30px;
+        @media #{$md-layout} {
+            margin: 0 0 10px;
+        }
+        @media #{$xs-layout} {
+            margin: 0 0 15px;
+        }
+        &:last-child {
+            margin: 0 0 0px;
+        }
+    }
+    .about-us-list {
+        margin: 0 0 34px;
+        @media #{$md-layout} {
+            margin: 0 0 12px;
+        }
+        @media #{$xs-layout} {
+            margin: 0 0 12px;
+        }
+        ul {
+            li {
+                position: relative;
+                color: #989898;
+                font-size: 12px;
+                line-height: 24px;
+                margin: 0 0 15px 15px;
+                &:last-child {
+                    margin: 0 0 0px 15px;
+                }
+                &::before {
+                    content: '\f111';
+                    font-family: FontAwesome;
+                    font-size: 5px;
+                    text-rendering: auto;
+                    vertical-align: middle;
+                    position: absolute;
+                    left: -15px;
+                    top: 1.6em;
+                }
+            }
+        }
+    }
+}
+
+.skill-content {
+    margin-right: 100px;
+    @media #{$lg-layout} {
+        margin-right: 50px;
+    }
+    @media #{$md-layout} {
+        margin-right: 0px;
+    }
+    @media #{$xs-layout} {
+        margin-right: 0px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 30px;
+        @media #{$md-layout} {
+            font-size: 22px;
+            margin: 0 0 15px;
+        }
+        @media #{$xs-layout} {
+            font-size: 19px;
+            margin: 0px 0 10px;
+        }
+    }
+    p {
+        color: #989898;
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+.skill-bar {
+    overflow: hidden;
+    padding-top: 11px;
+    margin-top: 20px;
+    .skill-bar-item {
+        padding-bottom: 30px;
+        position: relative;
+        @media #{$md-layout} {
+            padding-bottom: 20px;
+        }
+        > span {
+            font-size: 14px;
+            text-align: center;
+            text-transform: capitalize;
+            z-index: 2;
+        }
+        .progress {
+            background-color: #EFEFEF;
+            border-radius: 0;
+            box-shadow: none;
+            height: 5px;
+            margin-top: 9px;
+            overflow: visible;
+            .progress-bar {
+                background-color: rgb(163, 139, 94);
+                box-shadow: none;
+                position: relative;
+                span.text-top {
+                    color: #4a4141;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    position: absolute;
+                    right: 0;
+                    top: -34px;
+                }
+            }
+
+        }
+        &:nth-child(1) .progress-bar {
+            width: 95%;
+        }
+        &:nth-child(2) .progress-bar {
+            width: 85%;
+        }
+        &:nth-child(3) .progress-bar {
+            width: 80%;
+        }
+        &:nth-child(4) .progress-bar {
+            width: 99%;
+        }
+    }
+    &.skill-bar-width {
+        .skill-bar-item {
+            > span {
+                color: #989898;
+            }
+            .progress {
+                .progress-bar {
+                    span.text-top {
+                        color: #989898;
+                    }
+                }
+            }
+            &:nth-child(1) .progress-bar {
+                width: 90%;
+            }
+            &:nth-child(2) .progress-bar {
+                width: 80%;
+            }
+            &:nth-child(3) .progress-bar {
+                width: 70%;
+            }
+        }
+    }
+    &.skill-bar-gradient {
+        margin-top: 0;
+        .skill-bar-item {
+            @media #{$lg-layout} {
+                padding-bottom: 20px;
+            }
+            .progress {
+                .progress-bar {
+                    background-image: linear-gradient(to right, #e175a3 0%, #3a51e6 100%);
+                }
+            }
+        }
+    }
+    &.skill-bar-black {
+        margin-top: 0;
+        .skill-bar-item {
+            @media #{$lg-layout} {
+                padding-bottom: 20px;
+            }
+            .progress {
+                .progress-bar {
+                    background-color: rgb(74, 65, 65);
+                }
+            }
+        }
+    }
+    &.skill-bar-red {
+        margin-top: 0;
+        .skill-bar-item {
+            @media #{$lg-layout} {
+                padding-bottom: 20px;
+            }
+            .progress {
+                .progress-bar {
+                    background-color: #f4524d;
+                }
+            }
+        }
+    }
+    &.skill-bar-red-light {
+        margin-top: 0;
+        .skill-bar-item {
+            @media #{$lg-layout} {
+                padding-bottom: 20px;
+            }
+            .progress {
+                .progress-bar {
+                    background-color: #b97ebb;
+                }
+            }
+        }
+    }
+}
+
+
+.talk-us-content {
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+        display: block;
+        background-color: #262626;
+        padding: 55px 0 55px;
+        @media #{$xs-layout} {
+            padding: 35px 0 35px;
+            font-size: 25px;
+        }
+        &:hover {
+            background-color: $theme-color;
+        }
+    }
+}
+
+
+.team-details-area {
+    position: relative;
+    .team-details-img {
+        height: 100%;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 2;
+        @media #{$md-layout} {
+            position: static;
+            width: 100%;
+        }
+        @media #{$xs-layout} {
+            position: static;
+            width: 100%;
+        }
+        img {
+            height: 100%;
+            transition: all 0.3s linear 0s;
+            will-change: transform, top;
+            z-index: 0;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+}
+
+.team-details-content {
+    padding: 82px 276px 84px 75px;
+    @media #{$xx-layout} {
+        padding: 50px 50px 50px 50px;
+    }
+    @media #{$xl-layout} {
+        padding: 50px 50px 50px 50px;
+    }
+    @media #{$lg-layout} {
+        padding: 30px 30px 30px 30px;
+    }
+    @media #{$md-layout} {
+        padding: 42px 40px 45px 40px;
+    }
+    @media #{$xs-layout} {
+        padding: 32px 15px 35px 15px;
+    }
+    h2 {
+        font-size: 30px;
+        margin: 0 0 5px;
+        font-weight: bold;
+    }
+    > span {
+        font-size: 18px;
+        font-style: italic;
+        font-family: $playfairdisplay;
+        display: block;
+        margin: 0 0 50px;
+        @media #{$xl-layout} {
+            margin: 0 0 30px;
+        }
+        @media #{$lg-layout} {
+            margin: 0 0 20px;
+        }
+        @media #{$md-layout} {
+            margin: 0 0 20px;
+        }
+        @media #{$xs-layout} {
+            margin: 0 0 20px;
+        }
+    }
+    p {
+        font-size: 12px;
+        color: #989898;
+        margin: 0 0 20px;
+    }
+}
+
+.team-details-social {
+    margin-top: 56px;
+    @media #{$xx-layout} {
+        margin-top: 30px;
+    }
+    @media #{$xl-layout} {
+        margin-top: 0px;
+    }
+    @media #{$lg-layout} {
+        margin-top: 0px;
+    }
+    @media #{$md-layout} {
+        margin-top: 10px;
+    }
+    @media #{$xs-layout} {
+        margin-top: 0px;
+    }
+    a {
+        font-size: 16px;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media #{$xs-layout} {
+    .about-us-skill {
+        &.pb-85 {
+            padding-bottom: 42px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

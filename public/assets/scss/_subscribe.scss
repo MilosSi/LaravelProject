@@ -1,0 +1,191 @@
+/*-------- 6. Subscribe style ---------*/
+
+.subscribe-wrap {
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 45px;
+        text-decoration: underline;
+        @media #{$xs-layout} {
+            font-size: 20px;
+            margin: 0 0 15px;
+        }
+    }
+    .subscribe-form {
+        .mc-form {
+            position: relative;
+            > input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #e7e7e7;
+                color: #989898;
+                padding: 5px 100px 5px 0;
+                height: 43px;
+                font-size: 16px;
+            }
+            .mc-news {
+                display: none;
+            }
+            .clear {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0;
+                input {
+                    padding: 0;
+                    background-color: transparent;
+                    border: none;
+                    color: #262626;
+                    font-weight: 700;
+                    font-size: 16px;
+                    height: 43px;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subscribe-form-2 {
+    .mc-form-2 {
+        position: relative;
+        > input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #e7e7e7;
+            color: #333;
+            padding: 5px 60px 5px 0;
+            height: 43px;
+            font-size: 12px;
+            &:focus {
+                color: #262626;
+            }
+        }
+        .mc-news-2 {
+            display: none;
+        }
+        .clear-2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            input {
+                padding: 0;
+                background-color: transparent;
+                border: none;
+                color: #262626;
+                font-weight: 700;
+                font-size: 12px;
+                height: 43px;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    @media #{$xs-layout} {
+        &.mt-20 { 
+            margin-top: 0;
+        }
+    }
+    @media #{$md-layout} {
+        &.mt-20 { 
+            margin-top: 0;
+        }
+    }
+}
+
+.subscribe-content {
+    margin: -8px 0 0;
+    @media #{$md-layout} {
+        margin: 0px 0 30px;
+        text-align: center;
+    }
+    @media #{$xs-layout} {
+        margin: 0px 0 30px;
+        text-align: center;
+    }
+    h4 {
+        font-weight: 700;
+        font-size: 36px;
+        margin: 0 0 13px;
+        color: #fff;
+        font-family: $playfairdisplay;
+        @media #{$xs-layout} {
+            font-size: 30px;
+        }
+    }
+    p {
+        color: #fff;
+        margin: 0;
+        line-height: 1;
+    }
+}
+
+.subscribe-form-3 {
+    margin-left: 70px;
+    @media #{$md-layout} {
+        margin-left: 0px;
+    }
+    @media #{$xs-layout} {
+        margin-left: 0px;
+    }
+    .mc-form-3 {
+        position: relative;
+        > input {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            height: 84px;
+            font-size: 16px;
+            padding: 5px 125px 5px 30px;
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+            &::-moz-input-placeholder {
+                color: #fff;
+            }
+            @media #{$xs-layout} {
+                padding: 5px 125px 5px 17px;
+                height: 60px;
+            }
+        }
+        .mc-news-3 {
+            display: none;
+        }
+        .clear-3 {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            > input {
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                height: auto;
+                font-size: 16px;
+                padding: 0;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media #{$xs-layout} {
+    .subscribe-area {
+        &.pt-100 {
+            padding-top: 50px;
+        }
+        &.pb-100 {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+
+
+
+
+
